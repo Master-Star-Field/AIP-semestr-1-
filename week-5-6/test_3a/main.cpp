@@ -1,16 +1,10 @@
-
-//2a Напишите программу, которая принимает от пользователя координаты точки и
-//определяет, попала ли точка в заштрихованную область.
-//x^2 + y^2 = 4
-//y = x
-//x = 2
 #include <iostream>
 #include<cmath>
 
 int main()
 {
-    float r = 1; // радиус окружности
-
+    float r_in = 1; // радиус окружности
+    float r_out = 2;
     float x, y;
     std::cout << "Please enter x: " << std::endl;
     std::cin >> x;
@@ -20,7 +14,7 @@ int main()
 
     float rc = sqrt(x*x+y*y);
 
-    if ((rc > r) and (y < x) and  (x < 2)){
+    if ((rc > r_in) and (rc < r_out) and  (y > 0)){
 
         std::cout << "yes" << std::endl;
     }
@@ -32,4 +26,3 @@ int main()
     system("pause");
     return 0;
 }
-
