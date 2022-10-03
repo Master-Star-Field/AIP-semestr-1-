@@ -1,3 +1,5 @@
+//рисунок 3a
+
 #include <iostream>
 #include<cmath>
 
