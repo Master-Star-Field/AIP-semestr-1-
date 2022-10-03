@@ -8,11 +8,12 @@
 
 float f(float x){
     float y;
+    const float eps = 0.00001;
 
     if (x > 1){
         y = 3 * x - 7;
     }
-    if ( x == 1){
+    if (std::abs(x - 1) < eps){
         y = 3;
     }
     if (x < 1){
